@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Checker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>Weather Checker</h1>
     <form class = "weatherForm">
-        <input type = "text" class = "cityInput" placeholder = "Enter city name" required>
+        <input type = "text" class = "cityInput" placeholder = "Enter city name">
         <button type = "submit"> Get Weather </button>
     </form>
+
+    <div class="card">
+        <h1 class = "cityDisplay">Miami</h1>
+        <p class ="tempDisplau">90°F</p>
+        <p class ="humidityDisplay">Humidity 75%</p>
+        <p class ="descDisplay">Clear Skies</p>
+        <p class="weatherEmoji">☀️</p>
+        <p class="errorDisplay">Please enter a city</p>
+    </div>
     <div id="weatherResult"></div>
 
     <script src="script.js"></script>
