@@ -1,17 +1,49 @@
 body{
     font-family: Arial, sans-serif;
-    background-color:aliceblue;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('Images/copertina-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(20px);
 }
 
 .Title{
+    font-size: 3rem;
+    font-weight: bold;
     font-family:"geomini";
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.mainContainer{
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(163, 251, 229, 0.141), rgba(255, 255, 255, 0.158));
+}
+
+.searchDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.searchContent{
+    display: flex;
+    color: hsla(0, 0%, 20%, 0.6);
+    font-family:"geomini";
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .weatherForm{
-    margin: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .cityInput{
@@ -19,82 +51,94 @@ body{
     font-size: 2rem;
     font-weight: bold;
     border: 2px solid hsla(0, 0%, 20%, 0.3);
-    border-radius: 10px;
+    border-radius: 99px;
     margin: 10px;
     width: 300px;
     font-family:"geomini";
 }
 
+.cityInput:focus{
+    outline: none;
+    border-color: hsl(205, 87%, 70%);
+    box-shadow: 0 0 5px hsl(205, 87%, 70%);
+}
+
 button[type="submit"]{
     padding: 10px 20px;
     font-weight:bold;
+    font-family:"geomini";
     font-size: 2rem;
-    background-color: hsl(0, 74%, 55%);
+    background-color: hsl(205, 87%, 70%);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 99px;
     cursor:pointer;
-    font-family:"geomini";
 }
 
 button[type="submit"]:hover{
-    background-color:hsl(0, 74%, 44%);
+    background-color: hsl(205, 48%, 47%);
+    
+}
+
+button[type="submit"]:active{
+    background-color: hsl(205, 74%, 31%);
 }
 
 .card{
-    background: linear-gradient(180deg,hsl(325, 71%, 62%),rgb(255, 172, 71),hsl(206, 100%, 70%));
+    background: linear-gradient(to bottom, rgba(163, 251, 229, 0.141), rgba(255, 255, 255, 0.158));
+    backdrop-filter: blur(10px);
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
-    min-width:300px;
-    display:flex;
-    flex-direction:column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 h1{
-    margin-top:0;
-    margin-bottom: 25px;
-    font-family:"geomini";
+    margin-bottom: 20px;
 }
 
 p{
     font-size: 1.5rem;
-    margin: 5px 0;
-    font-family:"geomini";
+    margin: 10px 0;
 }
 
 .cityDisplay, .tempDisplay{
     font-size: 3.5rem;
-    font-weight:bold;
-    color: hsla(0, 0%,0%, 0.75);
-    margin-bottom:25;
-    font-family:"geomini";
-}
-.humidityDisplay{
-    font-weight:bold;
+    font-weight: bold;
+    color: hsl(220, 16%, 96%);
     margin-bottom: 25px;
     font-family:"geomini";
 }
-.descDisplay{
-    font-style:italic;
+
+.humidityDisplay{
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: hsl(220, 16%, 96%);
+    margin-bottom: 25px;
     font-family:"geomini";
 }
+
+.descDisplay{
+    font-weight: italic;
+    font-size: 1.5rem;
+    color:  hsl(220, 16%, 96%);
+    margin-bottom: 25px;
+    font-family:"geomini";
+}
+
 .weatherEmoji{
-    margin:0;
-    font-size:7.5rem;
+    font-size: 7.5rem;
+    margin-bottom: 25px;
 }
+
 .errorDisplay{
-    font-size:2.5rem;
-    font-weight:bold;
-    color:hsla(0, 0%, 0%, 0.75);
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: hsla(0, 0%, 20%, 0.5);
     font-family:"geomini";
 }
-
-
-
-
-
-
