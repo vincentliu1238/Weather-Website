@@ -6,6 +6,10 @@ body{
     align-items: center;
 }
 
+.Title{
+    font-family:"geomini";
+}
+
 .weatherForm{
     margin: 20px;
 }
@@ -18,6 +22,7 @@ body{
     border-radius: 10px;
     margin: 10px;
     width: 300px;
+    font-family:"geomini";
 }
 
 button[type="submit"]{
@@ -29,6 +34,7 @@ button[type="submit"]{
     border: none;
     border-radius: 5px;
     cursor:pointer;
+    font-family:"geomini";
 }
 
 button[type="submit"]:hover{
@@ -36,7 +42,7 @@ button[type="submit"]:hover{
 }
 
 .card{
-    background: linear-gradient(180deg,hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    background: linear-gradient(180deg,hsl(325, 71%, 62%),rgb(255, 172, 71),hsl(206, 100%, 70%));
     padding: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
@@ -49,11 +55,13 @@ button[type="submit"]:hover{
 h1{
     margin-top:0;
     margin-bottom: 25px;
+    font-family:"geomini";
 }
 
 p{
     font-size: 1.5rem;
     margin: 5px 0;
+    font-family:"geomini";
 }
 
 .cityDisplay, .tempDisplay{
@@ -61,15 +69,18 @@ p{
     font-weight:bold;
     color: hsla(0, 0%,0%, 0.75);
     margin-bottom:25;
+    font-family:"geomini";
 }
 .humidityDisplay{
     font-weight:bold;
     margin-bottom: 25px;
+    font-family:"geomini";
 }
 .descDisplay{
     font-style:italic;
     font-weight: bold;
     font-size: 2rem;
+    font-family:"geomini";
 }
 .weatherEmoji{
     margin:0;
@@ -78,7 +89,8 @@ p{
 .errorDisplay{
     font-size:2.5rem;
     font-weight:bold;
-    color:hsla(0,0%,0%,0.75);
+    color:hsla(0, 0%, 0%, 0.75);
+    font-family:"geomini";
 }
 
 
